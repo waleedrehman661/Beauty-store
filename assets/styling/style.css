@@ -368,6 +368,22 @@ footer{
 .inner2 img{
     mix-blend-mode: multiply;
 }
+/* WATSAAP_LOGO_CSS */
+.watsapp-logo{
+    position: absolute;
+    top: 85vh;
+    right: 30px;
+    position: fixed;
+    width: 55px; 
+    height: 55px;
+    padding: 500px;
+    background-color: #25d366 !important;
+    border-radius: 50%;
+    display: inline-block; 
+    padding: 10px; 
+    border-radius: 50%; 
+}
+/* WATSAAP_LOGO_CSS */
 @media (max-width:500px) {
     .top-nav{
         height: 50px;

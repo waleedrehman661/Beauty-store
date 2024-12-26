@@ -63,7 +63,7 @@ document.getElementById("sign-in-form").addEventListener("submit", function (eve
     let passwordMessage = document.getElementById("psms");
 
     // Validation patterns
-    let emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    let emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-] ?=.*[a-z]{5}+\.[a-zA-Z]{2,4}$/;
     let passwordPattern = /^[A-Za-z0-9@#*-_]{8}$/; // At least 8 characters
 
     // Clear previous error messages
