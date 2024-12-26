@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Favorite Product 1",
+    "description": "Description of Favorite Product 1",
+    "price": "$20",
+    "image": "path/to/image1.jpg",
+    "color": "#000"
+  },
+  {
+    "title": "Favorite Product 2",
+    "description": "Description of Favorite Product 2",
+    "price": "$25",
+    "image": "path/to/image2.jpg",
+    "color": "#ff0000"
+  },
+  {
+    "title": "Favorite Product 3",
+    "description": "Description of Favorite Product 3",
+    "price": "$30",
+    "image": "path/to/image3.jpg",
+    "color": "#008000"
+  }
+]

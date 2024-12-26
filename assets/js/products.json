@@ -1,0 +1,56 @@
+            [
+                { 
+                "image": "assets/images/dn-card1.jpg", 
+                "title": "3 In 1 Bright Sunscream", 
+                "description": "PROTECT, MOSTURIZE, REPEAT",
+                "price": "1999", "color": "#f9e547" 
+                },
+                { 
+                "image": "assets/images/dn-card2.jpg", 
+                "title": "Tint Sun Drops", 
+                "description": "PRACTICALLY WEIGHT-LESS MATE FORMULA", 
+                "price": "1999", "color": "#9678d3" 
+                },
+                { 
+                "image": "https://joinherbeauty.com/cdn/shop/files/Artboard1_94b687af-6b73-44df-89ba-c4576a38ed78.png?v=1728477039&width=533", 
+                "title": "Superkind Lift & Renew", 
+                "description": "1% RETIONAL COMPLEX LESS MATE FORMULA", 
+                "price": "1999", "color": "#5b36a8" 
+                },
+                { 
+                "image": "https://joinherbeauty.com/cdn/shop/files/1CitrusZest.png?v=1727787039&width=360", 
+                "title": "Ultra Bright Deorant", 
+                "description": "CELEBRATE YOUR AH_A MOMENTS", 
+                "price": "Rs.2,100", 
+                "color": "#bff684" 
+              },
+                { 
+                "image": "https://joinherbeauty.com/cdn/shop/files/Clouddropwithlogoforproductpage.jpg?v=1710913607&width=360", 
+                "title": "cloud drop", 
+                "description": "OVERNIGHT WATER SLEEP MASK", 
+                "price": "Rs.2,660", 
+                "color": "#8bb8e8" 
+            },        
+            { 
+                "image": "https://joinherbeauty.com/cdn/shop/products/HER86254x5c1.jpg?v=1695800762&width=360", 
+                "title": "superkind plowy serum", 
+                "description": "5% HYALOURIC ACID, 1% NIACINAMIDE", 
+                "price": "Rs.2,100", 
+                "color": "#d6bfdd" 
+            },
+            { 
+                "image": "https://joinherbeauty.com/cdn/shop/products/IMG_2125-Recovered.jpg?v=1695800743&width=360", 
+                "title": "Ultra Bright Deorant", 
+                "description": "CELEBRATE YOUR AH_A MOMENTS", 
+                "price": "Rs.2,100", 
+                "color": "#bff684" 
+            },  
+            { 
+                "image": "https://joinherbeauty.com/cdn/shop/products/HER9058copy1.jpg?v=1695800728&width=360", 
+                "title": "Ultra Bright Deorant", 
+                "description": "CELEBRATE YOUR AH_A MOMENTS", 
+                "price": "Rs.2,100", 
+                "color": "#bff684" 
+            }
+            ]
+            

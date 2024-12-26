@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Jquery-link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Jquery-link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- remix-icon-link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Css-file-links -->
+         <link rel="stylesheet" href="assets/styling/signup.css">
+        <link rel="stylesheet" href="assets/styling/style.css">
+        <!-- Css-file-links -->
+         <!-- owl-carosel -->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+         <!-- owl-carosel -->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    </head>
+    <body>
+        <!-- header-start -->
+        <header></header>
+        <!-- header-end -->
+        <section>
+            <div class="d-flex justify-content-center">
+                <div class="signup-container">
+                    <h1>Sign Up</h1>
+                    <p>Sign up to get rewards points, referral credits, and save payment information for easier purchasing.</p>
+                    <form id="signup-form" class="signup-form">
+                        <div class="name-fields">
+                            <div>
+                                <input id="first-name" type="text" placeholder="First Name" required>
+                            <span id="firstNameError" class="error-message"></span>
+                            </div>
+                            <div>
+                                <input id="last-name" type="text" placeholder="Last Name" required>
+                            <span id="lastNameError" class="error-message"></span>
+                            </div>
+                        </div>
+                        <input id="email-address" type="email" placeholder="Email Address" required>
+                        <span id="emailError" class="error-message"></span>
+                        <input id="password" type="password" placeholder="Create a Password" required>
+                        <span id="passwordError" class="error-message"></span>
+                        <button type="submit">Create</button>
+                        <a href="signin.html">Already signed up?</a>
+                    </form>
+                </div>
+            </div>
+        </section> 
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</html>
+<script src="assets/js/nav-foot.js"></script>
+<script>
+ document.getElementById("signup-form").addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent default form submission
+
+    // Retrieve input values
+    const firstName = document.getElementById("first-name").value;
+    const lastName = document.getElementById("last-name").value;
+    const emailAddress = document.getElementById("email-address").value;
+    const password = document.getElementById("password").value;
+
+    // Error message elements
+    const firstNameError = document.getElementById("firstNameError");
+    const lastNameError = document.getElementById("lastNameError");
+    const emailError = document.getElementById("emailError");
+    const passwordError = document.getElementById("passwordError");
+
+    // Clear previous error messages
+    firstNameError.textContent = "";
+    lastNameError.textContent = "";
+    emailError.textContent = "";
+    passwordError.textContent = "";
+
+    // Regular expressions for validation
+    const namePattern = /^[A-Za-z]+$/;
+    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/; // Valid email
+    const passwordPattern = /^[A-Za-z0-9@#*-_]{8}$/; // At least 8 characters
+
+    // Validation flags
+    let isValid = true;
+
+    // Validate first name
+    if (!namePattern.test(firstName)) {
+        firstNameError.textContent = "First name must contain only letters.";
+        isValid = false;
+    }
+
+    // Validate last name
+    if (!namePattern.test(lastName)) {
+        lastNameError.textContent = "Last name must contain only letters.";
+        isValid = false;
+    }
+
+    // Validate email
+    if (!emailPattern.test(emailAddress)) {
+        emailError.textContent = "Please enter a valid email address.";
+        isValid = false;
+    }
+
+    // Validate password
+    if (!passwordPattern.test(password)) {
+        passwordError.textContent = "Password must be at least 8 characters long and can include letters, numbers, and special characters (@, #, *, -, _).";
+        isValid = false;  // Ensure the validation flag is updated
+    }
+
+    // Stop if validation fails
+    if (!isValid) return;
+
+    // Save data to localStorage
+    localStorage.setItem("firstName", firstName);
+    localStorage.setItem("lastName", lastName);
+    localStorage.setItem("emailAddress", emailAddress);
+    localStorage.setItem("password", password);
+
+    // Show success message and reset form
+    alert("Sign-up information saved successfully!");
+    document.getElementById("signup-form").reset();
+});
+
+</script>

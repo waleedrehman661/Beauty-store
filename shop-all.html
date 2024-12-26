@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Shop</title>
+       <!-- remix-icon-link -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+       <!-- remix-icon-link -->
+    <!-- bootstrap& jquery-link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- bootstrap& jquery-link -->
+    <!-- Css-files-links -->
+    <link rel="stylesheet" href="assets/styling/style.css">
+    <link rel="stylesheet" href="assets/styling/shop.css">
+    <!-- Css-files-links -->
+</head>
+<body>
+    <!-- header-start -->
+     <header></header>
+    <!-- header-end -->
+    <section>
+        <div class="shop-banner">
+            <img id="shop-banner" src="assets/images/shop-banner" alt="">
+            <img src="assets/images/shop-banner-cm" alt="">
+        </div>
+        <div id="cards-container"></div>
+
+        <div id="pagination-container" class="d-flex justify-content-center align-items-center">
+            <button class="page-btn" id="prev-btn">Previous</button>
+            <div class="page-numbers">
+              <button class="page-num" data-page="1">1</button>
+              <button class="page-num" data-page="2">2</button>
+              <button class="page-num" data-page="3">3</button>
+              <button class="page-num" data-page="4">4</button>
+            </div>
+            <button class="page-btn" id="next-btn">Next</button>
+          </div>
+    </section>
+</body>
+</html>
+<!-- bootstrap&jquery-link -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<!-- bootstrap&jquery-link -->
+<!-- JS_FILES_LINKS -->
+<script src="assets/js/index.js"></script>
+<script src="assets/js/nav-foot.js"></script>
+<!-- JS_FILES_LINKS -->
+ <script>
+    $(document).ready(function () {
+  // Set the first page as active by default
+  $('.page-num').first().addClass('active');
+
+  // Handle page number click
+  $('.page-num').click(function () {
+    // Remove active class from all page numbers
+    $('.page-num').removeClass('active');
+    
+    // Add active class to the clicked page number
+    $(this).addClass('active');
+  });
+
+  // Handle Previous button click
+  $('#prev-btn').click(function () {
+    let currentPage = $('.page-num.active').data('page');
+    if (currentPage > 1) {
+      $('.page-num').removeClass('active');
+      $('.page-num[data-page="' + (currentPage - 1) + '"]').addClass('active');
+    }
+  });
+
+  // Handle Next button click
+  $('#next-btn').click(function () {
+    let currentPage = $('.page-num.active').data('page');
+    if (currentPage < 4) { // Since we only have 4 pages
+      $('.page-num').removeClass('active');
+      $('.page-num[data-page="' + (currentPage + 1) + '"]').addClass('active');
+    }
+  });
+});
+
+ </script>

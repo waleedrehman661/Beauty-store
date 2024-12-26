@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.Sign-inform{
+   display: flex;
+   flex-direction: column;
+   padding: 5px;
+}
+.Sign-inform input{
+   padding: 10px;
+   width: 38vw;
+   border-radius: 5px;
+   border: 2px solid black;
+   margin-bottom: 10px;
+}
+.Sign-inform h1{
+   margin-bottom: 40px;
+   font-size: 50px  ;
+}
+.Create-account{
+    margin-top: 10px;
+}
+.sigin-btn{
+    background-color: #f4cdd4;
+    padding: 12px;
+    border-radius: 100px;
+    border: 2px solid black;
+}
+.Sign-inform a{
+   color: rgb(48, 47, 47);
+   transition: ease-in 0.2s;
+ }
+.Sign-inform a:hover{
+   color: rgb(10, 10, 10);
+   font-weight: 500;
+ }
