@@ -68,4 +68,9 @@
         position: fixed;
     }
 }
+.cards-wrapper {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 15px; 
+}
 

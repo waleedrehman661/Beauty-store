@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.product{
+    mix-blend-mode: multiply;
+}
+.works-box{
+    text-align: center;
+    width: 300px;
+    padding: 2px;
+    line-height: 20px;
+}
+.works-box h4{
+   margin-top: 20px;
+}
+#hertribeboxes {
+    display: flex;
+    justify-content: center;  
+    align-items: center;    
+    width: 100%;              
+}

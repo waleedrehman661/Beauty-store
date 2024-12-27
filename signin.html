@@ -42,6 +42,11 @@
                 </form>
             </div>
         </section>
+        <a href="https://wa.me/1234567890" target="_blank" style="text-decoration: none;">
+            <div id="watsapp-logo">
+                <!-- SVG logo inside the div -->
+            </div>
+        </a>
     </body>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
@@ -54,7 +59,8 @@
 document.getElementById("sign-in-form").addEventListener("submit", function (event) {
     event.preventDefault(); // Prevent default form submission behavior
 
-    // Get input values
+    const storedEmail = localStorage.getItem("emailAddress");
+    const storedPassword = localStorage.getItem("password");
     let email = document.getElementById("signin-email").value;
     let password = document.getElementById("signin-password").value;
 
@@ -63,8 +69,8 @@ document.getElementById("sign-in-form").addEventListener("submit", function (eve
     let passwordMessage = document.getElementById("psms");
 
     // Validation patterns
-    let emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-] ?=.*[a-z]{5}+\.[a-zA-Z]{2,4}$/;
-    let passwordPattern = /^[A-Za-z0-9@#*-_]{8}$/; // At least 8 characters
+    let emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;  // Corrected regex for email
+    let passwordPattern = /^[A-Za-z0-9@#*-_]{8,}$/;  // At least 8 characters, no change needed
 
     // Clear previous error messages
     emailMessage.textContent = "";
@@ -78,27 +84,22 @@ document.getElementById("sign-in-form").addEventListener("submit", function (eve
 
     // Validate password
     if (!passwordPattern.test(password)) {
-        passwordMessage.textContent =
-            "Password must be at least 8 characters with valid characters.";
+        passwordMessage.textContent = "Password must be at least 8 characters with valid characters.";
         return;
     }
 
-    // Retrieve stored user data from local storage
-    const storedEmail = localStorage.getItem("emailAddress");
-    const storedPassword = localStorage.getItem("password");
-
-    // Check if entered email and password match the stored values
     if (email === storedEmail && password === storedPassword) {
         alert("Sign-In Successful! Welcome back!");
-        window.location.href="index.html"
+        window.location.href = "index.html"; // Redirect to home page
     } else {
-        alert("Invalid email or password. No have an Account!");
-        window.location.href="signup.html"
+        alert("Invalid email or password. Don't have an account?");
+        window.location.href = "signup.html"; // Redirect to signup page
     }
 
     // Clear the form
     document.getElementById("sign-in-form").reset();
 });
+
 
            
 </script>

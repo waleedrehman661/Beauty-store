@@ -264,10 +264,10 @@ marquee{
     text-decoration: none;
 }
 .description2 {
-    height: 150px; /* Fixed height for description */
-    overflow: hidden; /* Hide overflowed text */
+    height: 150px; 
+    overflow: hidden; 
     padding: 10px;
-    text-overflow: ellipsis; /* Add '...' for overflowing text */
+    text-overflow: ellipsis; 
 }
 .mobile{
     display: none;
@@ -275,9 +275,15 @@ marquee{
 .banner2{
     display: none;
 }
+.tribe1{
+    display: block;
+}
+.tribe2{
+    display: none;
+}
 @media (max-width: 780px) {
     .favourite-sec {
-        display: none !important; /* Force hide the section */
+        display: none !important; 
     }
     .mobile{
         display: block;
@@ -287,6 +293,19 @@ marquee{
     }
     .banner{
         display: none;
+    }
+    .tribe1{
+        display: none;
+    }
+    .tribe2{
+        display: block;
+    }
+    #hertribeboxes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;  
+        align-items: center;      
+        width: 100%;           
     }
 }
 /* Favorite-section */
@@ -418,3 +437,29 @@ footer{
         padding: 10px;
     }
 }
+
+
+.offcanvas-body {
+    background-color: #F8F8F8; /* Light gray background */
+  }
+  
+  .list-group-item {
+    color: #000000; /* Dark gray text */
+    border: none;
+    margin-top: 6px;
+    padding: 10px;
+  }
+  .list-group{
+    margin-top: 10px;
+  }
+  .btn-outline-secondary {
+    width: 100%;
+    background-color: #e790a0;
+    color: black;
+    border: none;
+    padding: 15px;
+    
+  }
+  .off-btn{
+    margin-top: 400px;
+  }

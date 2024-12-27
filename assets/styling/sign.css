@@ -3,36 +3,47 @@
     margin: 0;
     box-sizing: border-box;
 }
-.Sign-inform{
+.Sign-inform {
    display: flex;
    flex-direction: column;
-   padding: 5px;
+   padding: 20px;
+   width: 400px; 
+   margin: 0 auto; 
 }
-.Sign-inform input{
+
+.Sign-inform input {
    padding: 10px;
-   width: 38vw;
+   width: 100%;
    border-radius: 5px;
    border: 2px solid black;
    margin-bottom: 10px;
 }
-.Sign-inform h1{
+
+.Sign-inform h1 {
    margin-bottom: 40px;
-   font-size: 50px  ;
+   font-size: 50px;
+   text-align: center;
 }
-.Create-account{
-    margin-top: 10px;
+
+.Create-account {
+   margin-top: 10px;
 }
-.sigin-btn{
-    background-color: #f4cdd4;
-    padding: 12px;
-    border-radius: 100px;
-    border: 2px solid black;
+
+.sigin-btn {
+   background-color: #f4cdd4;
+   padding: 12px;
+   border-radius: 100px;
+   border: 2px solid black;
+   width: 100%; 
 }
-.Sign-inform a{
+
+.Sign-inform a {
    color: rgb(48, 47, 47);
    transition: ease-in 0.2s;
- }
-.Sign-inform a:hover{
+   text-align: left; 
+}
+
+.Sign-inform a:hover {
    color: rgb(10, 10, 10);
    font-weight: 500;
- }
+}

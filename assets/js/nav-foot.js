@@ -34,7 +34,7 @@ document.querySelector("header").innerHTML +=
         <div class="navbtn2">
             <a href=""><button>HER Journal</button></a>
             <a href="quiz.html"><button>Skin Quiz</button></a>
-            <button>HER Tribe</button>
+            <a href="hertribe.html"><button>HER Tribe</button></a>
             <button>Her Story</button>
         </div>
     </div>
@@ -42,28 +42,22 @@ document.querySelector("header").innerHTML +=
 </nav>
 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
   <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas Menu</h5>
     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body">
-    <h3>Welcome to the Offcanvas!</h3>
-    <p>This is a sample offcanvas sidebar. You can place text, images, and links inside it. Here are a few features:</p>
-    
-    <ul>
-      <li>Easy to toggle visibility</li>
-      <li>Responsive design</li>
-      <li>Perfect for mobile navigation</li>
-    </ul>
-    
-    <div class="dropdown mt-3">
-      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
-        Dropdown button
-      </button>
-      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <li><a class="dropdown-item" href="#">Action</a></li>
-        <li><a class="dropdown-item" href="#">Another action</a></li>
-        <li><a class="dropdown-item" href="#">Something else here</a></li>
-      </ul>
+    <div class="list-group">
+      <a href="shop-all.html" class="list-group-item list-group-item-action">Shop All</a>
+      <a href="#" class="list-group-item list-group-item-action">Shop By Category</a>
+      <a href="#" class="list-group-item list-group-item-action">Shop By Skin Concern</a>
+      <a href="#" class="list-group-item list-group-item-action">Shop By Ingredient</a>
+      <a href="#" class="list-group-item list-group-item-action">Value Sets</a>
+      <a href="favorite.html" class="list-group-item list-group-item-action">HER Favorites</a>
+    </div>
+    <div class="off-btn">
+       <a href="herjournal.html" class="btn btn-outline-secondary btn-block">HER Journal</a>
+            <a href="quiz.html" class="btn btn-outline-secondary btn-block">Skin Quiz</a>
+            <a href="hertribe.html" class="btn btn-outline-secondary btn-block">HER Tribe</a>
+            <a href="herstory.html" class="btn btn-outline-secondary btn-block">HER Story</a>
     </div>
   </div>
 </div>
