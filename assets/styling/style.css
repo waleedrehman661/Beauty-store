@@ -390,8 +390,9 @@ footer{
 /* WATSAAP_LOGO_CSS */
 .watsapp-logo{
     position: absolute;
+    z-index: 999;
     top: 85vh;
-    right: 30px;
+    right: 35px;
     position: fixed;
     width: 55px; 
     height: 55px;
@@ -438,28 +439,169 @@ footer{
     }
 }
 
-
 .offcanvas-body {
-    background-color: #F8F8F8; /* Light gray background */
+    background-color: #F8F8F8; 
+    padding: 10px 40px;
   }
   
   .list-group-item {
     color: #000000; /* Dark gray text */
     border: none;
-    margin-top: 6px;
-    padding: 10px;
+    margin-top: 4px;
   }
   .list-group{
-    margin-top: 10px;
+    margin-top: 6px;
   }
   .btn-outline-secondary {
     width: 100%;
     background-color: #e790a0;
     color: black;
     border: none;
-    padding: 15px;
+    padding: 13px;
+    margin-bottom: 3px;
     
   }
   .off-btn{
-    margin-top: 400px;
+    margin-top: 100px;
   }
+  .offcanvas-logos{
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+    margin-right: 10px;
+  }
+  .offcanvas-logos svg{
+    width: 40px;
+  }
+  .icon path {
+    fill: #000 !important;
+  }
+  .modal.top-modal .modal-dialog {
+    margin: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: none;
+    z-index: 1055;
+  }
+
+  .modal.top-modal .modal-content {
+    border-radius: 0;
+    background-color: #f8f9fa; /* Light background */
+    padding: 1rem;
+  }
+
+  /* Adjust the search field */
+  .modal-search-input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    outline: none;
+    font-size: 1rem;
+  }
+
+  .modal-search-input:focus {
+    border-color: #f4cdd4;
+    box-shadow: #f4cdd4;
+  }
+  .modal-body{
+    padding-inline: 90px;
+    position: relative;
+  }
+  #searchbtn-submit{
+    position: absolute;
+    top: 24px;
+    right: 110px;
+    color: #000;
+  }
+  @media (max-width: 600px) {
+    .modal-body{
+        padding-inline: 10px;
+        position: relative;
+      }
+      #searchbtn-submit{
+        position: absolute;
+        top: 24px;
+        right: 40px;
+        color: #000;
+      }
+  }
+  /* swiper */
+  .swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    width: 330px;
+    padding: 20px 30px;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+  /* swiper */
+  .reviews-sec{
+    background-color: #d0deff;
+    width: 100%;
+    padding-block: 50px;
+  }
+  .swiper-slide{
+    font-family: 'Arial', sans-serif;
+    background-color: #e9f0ff;
+    border-radius: 20px;
+    text-align: center;
+  }
+  .swiper-slide img{
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .review-text {
+    text-align: center;
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  /* Styling for the stars */
+  .stars {
+    font-size: 1.5em;
+    color: #ff69b4; /* Pink color */
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+  }
+  
+  /* Hover effect for stars */
+  .stars:hover {
+    color: #ff1493; /* Darker pink on hover */
+  }
+  
+  /* Styling for the reviewer's name */
+  .reviewer-name {
+    text-align: center;
+    font-size: 1.1em;
+    color: #333;
+    margin-top: 5px;
+  }
+  
+  /* Bold name */
+  .reviewer-name strong {
+    font-weight: bold;
+  }
+  
+  /* Styling for the review description */
+  .review-description {
+    text-align: center;
+    font-size: 1em;
+    color: #777;
+    margin-top: 10px;
+    padding: 0 20px;
+  }
+  
