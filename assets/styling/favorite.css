@@ -17,4 +17,9 @@ body{
         display: block;
     }
 }
+@media (max-width:450px) {
+    .item{
+        width: 50%;
+    }
+}
 
