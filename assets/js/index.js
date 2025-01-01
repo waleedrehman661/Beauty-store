@@ -7,7 +7,7 @@ $(document).ready(function () {
   
       products.forEach(product => {
         const card = `
-          <div class="item px-2 py-2 col-lg-3 col-md-4 col-sm-6 col-12">
+          <div class="item w-mb-25 px-2 py-2 col-lg-3 col-md-4 col-sm-6 col-12">
             <div class="card-container">
               <div class="img-container">
                 <img class="card-img" src="${product.image}" alt="">
