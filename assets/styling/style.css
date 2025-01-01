@@ -437,6 +437,8 @@ footer{
         font-size: 40px;
         padding: 10px;
     }
+}
+@media (max-width:450px) {
     .item{
         width: 50%;
     }
