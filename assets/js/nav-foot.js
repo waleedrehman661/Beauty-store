@@ -33,11 +33,22 @@ document.querySelector("header").innerHTML +=
         </a>
         </div>
         <div class="box3">
-            <a style="color: black;" href="signin.html"><i id="search-i" class="ri-search-line"></i></a>
+               <i id="searchIcon" class="ri-search-line text-dark search-i" data-bs-toggle="modal" data-bs-target="#searchModal"></i>
              <a style="color: black;" href="signin.html"><i class="ri-user-line"></i></a>
             <i class="ri-shopping-cart-line"></i>
         </div>
     </div>
+      <div class="modal fade top-modal" id="searchModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <form>
+            <input type="text" class="form-control" placeholder="Type to search...">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
     <div class="third-nav">
         <div class="navbtn1">
             <a href="shop-all.html"> <button>Shop All</button> </a>

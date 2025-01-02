@@ -17,9 +17,9 @@ body{
         display: block;
     }
 }
-@media (max-width:450px) {
-    .item{
-        width: 50%;
+@media (max-width:560px) {
+    .item2{
+        width: 46%;
     }
 }
 
