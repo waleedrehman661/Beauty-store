@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <!-- Swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- Swiper -->
@@ -17,6 +18,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- remix-icon-link -->
     <!-- Css-file-links -->
+     <link rel="stylesheet" href="assets/styling/media.css">
      <link rel="stylesheet" href="assets/styling/style.css">
     <!-- Css-file-links -->
      <!-- owl-carosel -->
@@ -468,25 +470,101 @@
   </div>
 </div>
 </div>
-
  </main>
 </section>
 <!-- Favourite-sec-mobile-view -->
-<footer>
-  <div class="foot-inner1">
-   <div class="d-flex justify-content-center">
-     <div>
-      <p class="text-center">Subscribe to our Newsletter.</p>
-      <div class="search">
-      <input type="search" name="" id="" placeholder="Email"><button>SIGN ME UP!</button>
-     </div>
+ <section>
+  <div class="class my-5">
+    <img class="w-100 we-are-cm" src="assets/images/we-are-her-banner.png" alt="">
+    <img class="w-100 we-are-mb" src="assets/images/we-are-her-mobile.png" alt="">
+  </div>
+ </section>
+ <section>
+   <div class="brand-main">
+    <div class="brand-1">
+      <div class="brandbox">
+        <img width="150px" src="assets/images/brand1.png" alt="">
+        <p style="color: #ffc999;">CRUELTY FREE</p>
+      </div>
+      <div class="brandbox">
+        <img width="150px" src="assets/images/brand2.png" alt="">
+        <p style="color: #a1e3ba;">PARABEN AND SULPHATE FREE</p>
+      </div>
+      <div class="brandbox">
+        <img width="150px" src="assets/images/brand3.png" alt="">
+        <p style="color: #e5d5e6;">NON TOXIC</p>
+      </div>
+    </div>
+    <div class="brand-2">
+      <div class="brandbox">
+        <img width="150px" src="assets/images/brand4.png" alt="">
+        <p style="color: #8eb8e9;">100% VEGAN</p>
+      </div>
+      <div class="brandbox">
+        <img width="150px" src="assets/images/brand5.png" alt="">
+        <p style="color: #ff6a00;">DAILY USE</p>
+      </div>
+      <div class="brandbox">
+        <img width="150px" src="assets/images/brand6.png" alt="">
+        <p style="color: #ffa4b3;">CLEAN & KIND</p>
+      </div>
     </div>
    </div>
-  </div>
-  <div class="inner2">
-    <!-- <img src="assets/images/her (1).png" alt=""> -->
+ </section>
+ <footer>
+  <div class="footer-container">
+    <div class="newsletter">
+      <h3>Subscribe to our Newsletter</h3>
+      <form>
+        <div class="form">
+          <input type="email" placeholder="Enter your Email" required />
+        <button type="submit">SIGN ME UP!</button>
+        </div>
+      </form>
+    </div>
+    <div class="footer-sections">
+      <div class="footer-section logo-section">
+        <img src="assets/images/her (1).png" alt="">
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a> <!-- Instagram icon -->
+        </div>
+        
+      </div>
+      <div class="footer-section">
+        <h3 class="dropdown-header">Information</h3>
+        <ul class="dropdown-content">
+          <li><a href="#">HER Story</a></li>
+          <li><a href="#">Track your Order</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Address</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3 class="dropdown-header">Policies</h3>
+        <ul class="dropdown-content">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Shipping Policy</a></li>
+          <li><a href="#">Exchange & Replacement</a></li>
+          <li><a href="#">Payment on Card</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3 class="dropdown-header">Customer Care</h3>
+        <ul class="dropdown-content">
+          <li>HERBeauty (Pvt) Limited</li>
+          <li>Call or WhatsApp at <a href="tel:03000341191">03000341191</a></li>
+          <li>
+            Write to us at <a href="mailto:hello@joinherbeauty.com">hello@joinherbeauty.com</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </footer>
+
+
+
 <a href="https://wa.me/1234567890" target="_blank" style="text-decoration: none;">
     <div id="watsapp-logo">
         <!-- SVG logo inside the div -->
@@ -506,24 +584,42 @@
 <script src="assets/js/nav-foot.js"></script>
 <script src="assets/js/carousels.js"></script>
 <script>
-  $(document).ready(function(){
-  $(".owl-carousel").owlCarousel({
-    loop: true, // Enables infinite scrolling
-    margin: 0, // Space between items
-    nav: true, // Next/Prev navigation buttons
+ $(document).ready(function () {
+  $("#value-carousel").owlCarousel({
+    loop: true,
+    margin: 0,
+    responsiveClass: true,
     responsive: {
       0: {
-        items: 1 // 1 item for small screens
+        items: 1,
+        nav: true
       },
       600: {
-        items: 2 // 2 items for medium screens
+        items: 2,
+        nav: false
       },
       1000: {
-        items: 3 // 3 items for large screens
+        items: 3,
+        nav: true,
+        loop: true
       }
     }
   });
 });
+
+
+  document.querySelectorAll('.dropdown-header').forEach(header => {
+    header.addEventListener('click', () => {
+      header.classList.toggle('active');
+      const content = header.nextElementSibling;
+      if (content.style.display === 'block') {
+        content.style.display = 'none';
+      } else {
+        content.style.display = 'block';
+      }
+    });
+  });
+
 
 </script>
 

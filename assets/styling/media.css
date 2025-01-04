@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@media (max-width:994px) {
+    .brand-main{
+        display: flex;
+        gap: 2vw;
+        flex-direction: column;
+    }
+    .brandbox img{
+        width: 80px;
+    }
+    .brand-1{
+        display: flex;
+        gap: 2vw;
+        justify-content: space-around;
+    }
+    .brand-2{
+        display: flex;
+        gap: 2vw;
+        justify-content: space-around;
+    }
+    .value-main{
+        display: none !important;
+    }
+}
+
+@media (max-width: 765px) {
+    .we-are-cm {
+        display: none !important;
+    }
+    .we-are-mb {
+        display: block !important;
+    }
+}
+.we-are-mb {
+    display: none;
+}
+
+

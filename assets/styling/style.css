@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Anton&family=Creepster&family=Dancing+Script:wght@400..700&family=DynaPuff:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oleo+Script:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Spicy+Rice&display=swap');
 body{
     background-color: aliceblue;
+
 }
 *{
     margin: 0;
@@ -728,6 +729,9 @@ footer{
 #l-card{
     width: 60%;
  }
+.owl-carousel{
+    padding: 50px 80px;
+}
 
 @media (max-width: 960px) {
     #valuemain {
@@ -737,7 +741,6 @@ footer{
         display: block;
     }
 }
-
 @media (max-width: 887px) {
  .loving-main{
     flex-direction: column-reverse; 
@@ -758,3 +761,173 @@ footer{
     object-fit: cover;
 }
 }
+.brand-main{
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    padding-inline: 20px;
+    width: 100%;
+}
+.brandbox{
+    text-align: center;
+    width: 150px;
+}
+.brandbox p{
+    text-align: center;
+font-weight: 700;
+}
+.brand-1{
+    display: flex;
+    gap: 2vw;
+}
+.brand-2{
+    display: flex;
+    gap: 2vw;
+}
+@media (min-width:1200px) and (max-width:1519px) {
+    .brand-main{
+        display: flex;
+        justify-content: center;
+        gap: 4vw;
+        padding-inline: 20px;
+    }
+    .brandbox{
+        text-align: center;
+        width: 150px;
+    }
+    .brand-1{
+        display: flex;
+        gap: 4vw;
+    }
+    .brand-2{
+        display: flex;
+        gap: 4vw;
+    }
+}
+/* Footer */
+
+footer {
+    background-color: #fbe3ea;
+    padding: 80px 70px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .newsletter {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .newsletter h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .newsletter form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .newsletter input {
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #000000;
+    outline: none;
+    width: 250px;
+  }
+  
+  .newsletter button {
+    padding: 13px 10px;
+    font-size: 14px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .footer-sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .footer-section h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 15px;
+  }
+  
+  .footer-section ul li {
+    line-height: 40px;
+  }
+  
+  .footer-section ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  .logo-section img{
+    width: 200px;
+  }
+  
+  .social-icons a {
+    margin-right: 10px;
+    color: #333;
+    font-size: 18px;
+  }
+  .form-sign{
+    display: flex;
+    align-items: center;
+  }
+  .dropdown-header{
+    color: black;
+    font-size: 100px;
+  }
+  .social-icons a {
+    margin-right: 10px;
+    color: #333;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:nth-child(2) { /* Target the Instagram icon */
+    color: #e1306c; 
+  }
+  
+  .social-icons a:hover {
+    color: #000; 
+  }
+  .fa-facebook{
+    color: rgb(27, 105, 215);
+  }
+  /* Responsive for mobile view */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+    }
+  
+    .footer-sections {
+      flex-direction: column;
+    }
+  }
+  
+/* Footer */
