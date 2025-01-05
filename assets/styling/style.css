@@ -144,7 +144,7 @@ nav button:hover{
 .cards-sec{
     width: 100%;
     background-color: #f4cdd4;
-    padding: 50px 60px;
+    padding: 40px 0px;
 }
 .cards-sec h2{
     font-size: 45px;
@@ -188,11 +188,10 @@ nav button:hover{
     object-fit: cover;
 }
 .owl-carousel .item {
-    margin: 0 1px; /* Match the margin value */
     text-align: center;
 }
 .owl-nav {
-    display: none; /* Hides navigation arrows */
+    display: none;
 }
 .buy-btn{
     width: 180px;
@@ -373,7 +372,7 @@ marquee{
 footer{
     background-color: #f4cdd4;
     width: 100%;
-    height: 500px;
+    height: auto;
     padding: 50px;
 }
 .foot-inner1 div input{
@@ -465,8 +464,9 @@ footer{
     margin-top: 100px;
   }
   .offcanvas-logos{
+    align-items: center;
     display: flex;
-    justify-content: right;
+    justify-content: space-between;
     gap: 10px;
     margin-right: 10px;
   }
@@ -730,8 +730,54 @@ footer{
     width: 60%;
  }
 .owl-carousel{
-    padding: 50px 80px;
+    padding: 10px 20px;
 }
+@media (max-width:450px) {
+  .owl-carousel{
+    padding: 5px 4px;
+}
+.strip {
+  display: flex;
+  justify-content: space-around;
+  background-color: #e6f5e6;
+  padding: 5px 6px;
+  border-radius: 5px;
+}
+
+}
+.strip {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f4c3cc;
+  padding: 5px 0px;
+  border-radius: 5px;
+}
+
+.strip .tab-btn {
+  cursor: pointer;
+  font-size: 16px;
+  padding: 2px;
+  color: #080808;
+  transition: color 0.3s, font-weight 0.3s;
+}
+
+.strip .tab-btn.active {
+  color: #000000;
+  font-weight: bold;
+}
+
+.tab-content {
+  margin-top: 20px;
+}
+
+.tab-panel {
+  display: none;
+}
+
+.tab-panel.active {
+  display: block;
+}
+
 
 @media (max-width: 960px) {
     #valuemain {

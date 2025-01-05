@@ -39,4 +39,23 @@
     display: none;
 }
 
+@media (max-width: 480px) {
+    .Sign-inform {
+        width: 100%; 
+        padding: 15px; 
+    }
+ 
+    .Sign-inform input {
+        padding: 12px; 
+        width: 300px;
+    }
+ 
+    .sigin-btn {
+        padding: 14px; 
+    }
+ 
+    .Create-account {
+        text-align: center; 
+    }
+ }
 
