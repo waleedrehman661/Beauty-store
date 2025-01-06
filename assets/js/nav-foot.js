@@ -35,7 +35,22 @@ document.querySelector("header").innerHTML +=
         <div class="box3">
                <i id="searchIcon" class="ri-search-line text-dark search-i" data-bs-toggle="modal" data-bs-target="#searchModal"></i>
              <a style="color: black;" href="signin.html"><i class="ri-user-line"></i></a>
-            <i class="ri-shopping-cart-line"></i>
+           <span data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" class="position-relative">
+  <i class="ri-shopping-cart-line"></i> 
+  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark" id="cartCount">
+    0
+  </span>
+</span>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    
+  </div>
+</div>
+
         </div>
     </div>
       <div class="modal fade top-modal" id="searchModal" tabindex="-1" aria-hidden="true">
